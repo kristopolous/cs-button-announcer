@@ -17,8 +17,7 @@ if response.status_code == 200:
         current_status = "closed"
     
     if os.path.exists(status_file):
-        with open(status_file, 'r') as file:
-            last_status = file.read().strip()
+        last_status = open(status_file, 'r').read().strip()
     
     if current_status != last_status:
         open(status_file, 'w').write(current_status)

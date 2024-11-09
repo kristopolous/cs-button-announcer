@@ -1,0 +1,22 @@
+#!/bin/bash
+base=/home/chris/cs-check
+cat << ENDL
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+ boundary="who-cares/nomatter"
+From: Ding Dong <chris@9ol.es>
+Subject: Crash Space is Open Y'all!!
+
+This is a MIME-encapsulated message
+--who-cares/nomatter
+Content-Type: text/html
+
+<html><body><pre>
+   -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
+$(fortune $base/fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/    /')
+   -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
+$(fortune characters/ | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
+</pre></body></html>
+--who-cares/nomatter--
+
+ENDL

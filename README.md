@@ -7,7 +7,7 @@ The python program is at least 70% chatgpt. The animal-say is something I develo
 
 ### caveats and more!
 
-This code baked-in full paths to make cron happy so fix those if you want to use it, or just name your unix user chris, drop it in the directory cs-check, and consider the code as-is to be flawless and omnipotent --- do as thou whilst.
+This code features baked-in full paths to make cron happy so fix those if you want to use it, or just name your unix user chris, drop it in the directory cs-check, and consider the code as-is to be flawless and omnipotent --- do as thou whilst.
 
 The cron line I use is
 ```

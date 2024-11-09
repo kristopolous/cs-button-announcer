@@ -15,7 +15,7 @@ Content-Type: text/html
    -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
 $(fortune $base/fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/    /')
    -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
-$(fortune characters/ | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
+$(fortune $base/characters/ | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
 </pre></body></html>
 --who-cares/nomatter--
 

@@ -11954,8 +11954,6 @@ Be braver -- you can't cross a chasm in two small jumps.
 %
 Be careful!  Is it classified?
 %
-Be careful!  UGLY strikes 9 out of 10!
-%
 Be careful how you get yourself involved with persons or
 situations that can't bear inspection.
 %

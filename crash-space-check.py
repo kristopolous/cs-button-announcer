@@ -4,8 +4,7 @@ import os
 import sys
 import subprocess
 
-base="/home/chris/cs-check/"
-status_file = f"{base}/.last-crash-space-status.txt"
+status_file = ".last-crash-space-status.txt"
 
 response = requests.get( "https://crashspacela.com/sign/")
 if response.status_code == 200:
@@ -25,7 +24,7 @@ if response.status_code == 200:
         open(status_file, 'w').write(current_status)
 
         if current_status == "open":
-            response = os.popen(f'{base}/animal-say | /usr/bin/msmtp crash-space-open-status@googlegroups.com').read()
+            response = os.popen('./animal-say | /usr/bin/msmtp crash-space-open-status@googlegroups.com').read()
             if response:
                 print("Error sending email:", response)
         

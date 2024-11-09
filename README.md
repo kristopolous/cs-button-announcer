@@ -11,7 +11,7 @@ This code features baked-in full paths to make cron happy so fix those if you wa
 
 The cron line I use is
 ```
-* * * * * /home/chris/cs-check/crash-space-check.py
+* * * * * /home/chris/cs-check/cron-job.sh
 ```
 
 I use [msmtp](https://marlam.de/msmtp/) for the mail program. 

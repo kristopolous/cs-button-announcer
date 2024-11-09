@@ -1,5 +1,4 @@
 #!/bin/bash
-base=/home/chris/cs-check
 cat << ENDL
 MIME-Version: 1.0
 Content-Type: multipart/alternative; 
@@ -11,11 +10,13 @@ This is a MIME-encapsulated message
 --who-cares/nomatter
 Content-Type: text/html
 
-<html><body><pre>
+<html><body>
+$(./check-for-events.py)
+<pre>
    -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
-$(fortune $base/fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/    /')
+$(fortune fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/    /')
    -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
-$(fortune $base/characters/ | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
+$(fortune characters | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
 </pre></body></html>
 --who-cares/nomatter--
 

@@ -15,9 +15,9 @@ Content-Type: text/html
 $(./check-for-events.py)
 <pre>
    -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
-$(fortune fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/    /')
+$(/usr/games/fortune fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/    /')
    -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
-$(fortune characters | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
+$(/usr/games/fortune characters | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
 </pre></body></html>
 --who-cares/nomatter--
 

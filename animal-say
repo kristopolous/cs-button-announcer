@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /home/chris/cs-check
 cat << ENDL
 MIME-Version: 1.0
 Content-Type: multipart/alternative; 

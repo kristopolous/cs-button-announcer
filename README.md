@@ -3,7 +3,7 @@
 Naming is hard. Let's go with that.
 
 This software monitors a web page for a local makerspace I'm part of and then sends out an email when it changes to saying it's open. That's about it.
-The python program is at least 70% chatgpt. The animal-say is something I developed for a pentium-90 hobbyist project a few years ago because cowsay was slow on it ( I mean like, multiple seconds ). So I use the magic of /usr/games/fortune twice! Once for the out of date, hopefully not insensitive quote, and once again for the whimsical ascii art character who is saying it.
+The python program is like 50% chatgpt. The animal-say is something I developed for a pentium-90 hobbyist project a few years ago because cowsay was slow on it ( I mean like, multiple seconds ). So I use the magic of /usr/games/fortune twice! Once for the out of date, hopefully not insensitive quote, and once again for the whimsical ascii art character who is saying it.
 
 ### caveats and more!
 

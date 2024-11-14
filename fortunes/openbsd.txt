@@ -299,12 +299,6 @@ A general leading the State Department resembles a dragon commanding
 ducks.
 		-- New York Times, Jan.  20, 1981
 %
-A girl and a boy bump into each other -- surely an accident.
-A girl and a boy bump and her handkerchief drops -- surely another accident.
-But when a girl gives a boy a dead squid -- *____that ___had __to
-____mean _________something*.
-		-- S. Morganstern, "The Silent Gondoliers"
-%
 A gleekzorp without a tornpee is like a quop without a fertsneet (sort
 of).
 %
@@ -1662,12 +1656,6 @@ perverted disgusting person are you," these letters typically ask,
 "that you make jokes about setting fire to a goat?"
 		-- Dave Barry, "Why Humor is Funny"
 %
-As an adolescent I aspired to lasting fame, I craved factual
-certainty, and I thirsted for a meaningful vision of human life -- so I
-became a scientist.  This is like becoming an archbishop so you can
-meet girls.
-		-- Matt Cartmill
-%
 As far as the laws of mathematics refer to reality, they are not
 certain, and as far as they are certain, they do not refer to reality.
 		-- Albert Einstein
@@ -2245,10 +2233,6 @@ wrote the program.
 
 Fortunately, the second-to-last bug has just been fixed.
 		-- Ray Simard
-%
-Bugs, pl.  n.:
-	Small living things that small living boys throw on small
-living girls.
 %
 BULLWINKLE: "You just leave that to my pal.  He's the brains of the
 	    outfit."
@@ -3122,9 +3106,6 @@ prejudice, and impulse, without restraint or regard to consequences.
 Result is demagogism, license, agitation, discontent, anarchy.
 		-- U.S.  Army Training Manual No. 2000-25 (1928-1932),
 		   since withdrawn.
-%
-Demographic polls show that you have lost credibility across the
-board.  Especially with those 14 year-old Valley girls.
 %
 Dentist, n.:
 	A Prestidigitator who, putting metal in one's mouth, pulls
@@ -4868,16 +4849,6 @@ Logg's Rebuttal to Gray's Law:
 %
 Great minds run in great circles.
 %
-	GREAT MOMENTS IN AMERICAN HISTORY #21 -- July 30, 1917
-
-On this day, New York City hotel detectives burst in and caught then-
-Senator Warren G. Harding in bed with an underage girl.  He bought them
-off with a $20 bribe, and later remarked thankfully, "I thought I
-wouldn't get out of that under $1000!" Always one to learn from his
-mistakes, in later years President Harding carried on his affairs in a
-tiny closet in the White House Cabinet Room while Secret Service men
-stood lookout.
-%
 Green light in A.M.  for new projects.
 Red light in P.M.  for traffic tickets.
 %
@@ -5590,9 +5561,6 @@ I am more bored than you could ever possibly be.  Go back to work.
 %
 I am not an Economist.  I am an honest man!
 		-- Paul McCracken
-%
-I am not now, and never have been, a girlfriend of Henry Kissinger.
-		-- Gloria Steinem
 %
 I am not now, nor have I ever been, a member of the demigodic party.
 		-- Dennis Ritchie
@@ -8315,10 +8283,6 @@ Life: loathe it or ignore it, you can't like it.
 Like so many Americans, she was trying to construct a life that made
 sense from things she found in gift shops.
 		-- Kurt Vonnegut, Jr.
-%
-Like the ski resort of girls looking for husbands and husbands looking
-for girls, the situation is not as symmetrical as it might seem.
-		-- Alan McKay
 %
 Limericks are art forms complex,
 Their topics run chiefly to sex.

@@ -1691,11 +1691,6 @@ from going insane.  Works with the wife too :-)
 
 	- Derek Mulcahy on tuxscreen-devel
 %
-:) Even an (ex)girlfriend of mine said that Linux is much better than Windows,
-because of the messages on boot ("superb cyber feeling a'la Matrix :)").
-
-	- G�bor L�n�rt on linux-kernel
-%
 Oh, come on.  Every government is right on some issues.  Proof:
 
 	For every government X there is at least one government Y such that X
@@ -2253,11 +2248,6 @@ machine will die long before it ever finishes.
 
 	- George Anzinger on linux-kernel
 %
-how'd it go?  "hundred madmen raping a girl for a week and conceiving a
-homicidal maniac - perfect allegory for ISO standard development process.
-
-	- Al Viro about standard commitees.
-%
 Is that, by any chance, the same crowd that stands behind DAFS?
 If it _is_ the same crowd - send them to hell, they are beyond hope.
 
@@ -2488,11 +2478,6 @@ Because you are assuming there will be -one- kind of wackomatic PC
 system - IBM's.
 
 	- Alan Cox on linux-kernel
-%
-Think of the kernel as a grumpy girlfriend that you just stood up, and
-bring flowers next time.
-
-	- Linus Torvalds on linux-kernel
 %
 <billh> That was cute.
 <billh> 2.5.30 just flat out crashed early during the boot cycle.

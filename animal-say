@@ -14,8 +14,8 @@ Content-Type: text/html
 <html><body>
 $(./check-for-events.py)
 <pre style=line-height:1.15em><font color="#555">
-   -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  - <strong><em style=color:#888>
-$(/usr/games/fortune /home/chris/cs-check/fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/    /')</em></strong>
+   -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  - <em style=color:#888>
+$(/usr/games/fortune /home/chris/cs-check/fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/    /')</em>
    -  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
 $(/usr/games/fortune characters | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
 </font></pre></body></html>

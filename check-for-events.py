@@ -92,4 +92,4 @@ else:
         "The schedule was blank, but the workbench was ready. It wasn’t planned, but that made it feel even more special. A quiet time when the workshop was ready for something unexpected. I had a feeling it was my turn to take over."])
 
 
-    print(f'<h1>No Event: {title}</h1>\n<p>{descr}</p><hr>')
+    print(f'<h1>No Event: {title}</h1>\n<p>{descr}</p>')

@@ -12,14 +12,14 @@ now = datetime.now(pytz.timezone('America/Los_Angeles'))
 
 events_result = service.events().list(
     calendarId='crashspacela@gmail.com',
-    timeMin=(now - timedelta(minutes=20)).isoformat(),
-    timeMax=(now + timedelta(minutes=20)).isoformat(),
+    timeMin=(now - timedelta(minutes=30)).isoformat(),
+    timeMax=(now + timedelta(minutes=40)).isoformat(),
     singleEvents=True
 ).execute()
 
 events = events_result.get('items', [])
 if events:
-    print(f'<h1>{events[0]["summary"]}</h1>\n<p>{events[0]["description"]}</p><hr>')
+    print(f'<h1>{events[0]["summary"]}</h1>\n<p>{events[0]["description"]}</p>')
 else:
     title = random.choice([
         "Secret Time",

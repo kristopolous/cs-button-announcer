@@ -14,9 +14,9 @@ Content-Type: text/html
 <html><body>
 $(./check-for-events.py)
 <center><div style=display:inline-block;text-align:left>
-<pre style=line-height:1.15em><font color=#555><tt style=color:#F00>-</tt>  <tt style=color:#F30>-</tt> <tt style=color:#F60>-</tt> <tt style=color:#F90>~</tt> <tt style=color:#FC0>~</tt><tt style=color:#FF0>~</tt><tt style=color:#CF0>~</tt><tt style=color:#9F0>~</tt><tt style=color:#6F0>=</tt><tt style=color:#3F0>=</tt><tt style=color:#0F0>~</tt><tt style=color:#0F3>#</tt><tt style=color:#0F6>=</tt><tt style=color:#0F9>#</tt><tt style=color:#0FC>#</tt><tt style=color:#0FF>#</tt><tt style=color:#0CF>=</tt><tt style=color:#09F>#</tt><tt style=color:#06F>~</tt><tt style=color:#03F>=</tt><tt style=color:#00F>=</tt><tt style=color:#30F>~</tt><tt style=color:#60F>~</tt><tt style=color:#90F>~</tt><tt style=color:#C0F>~</tt><tt style=color:#F0F>~</tt> <tt style=color:#F0C>~</tt> <tt style=color:#F09>-</tt> <tt style=color:#F06>-</tt>  <tt style=color:#F03>-</tt><em style=color:#888>
+<pre style=line-height:1.15em><font color=#555>-  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -<em style=color:#888>
 $(/usr/games/fortune /home/chris/cs-check/fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/   /')</em>
-<tt style=color:#F00>-</tt>  <tt style=color:#F30>-</tt> <tt style=color:#F60>-</tt> <tt style=color:#F90>~</tt> <tt style=color:#FC0>~</tt><tt style=color:#FF0>~</tt><tt style=color:#CF0>~</tt><tt style=color:#9F0>~</tt><tt style=color:#6F0>=</tt><tt style=color:#3F0>=</tt><tt style=color:#0F0>~</tt><tt style=color:#0F3>#</tt><tt style=color:#0F6>=</tt><tt style=color:#0F9>#</tt><tt style=color:#0FC>#</tt><tt style=color:#0FF>#</tt><tt style=color:#0CF>=</tt><tt style=color:#09F>#</tt><tt style=color:#06F>~</tt><tt style=color:#03F>=</tt><tt style=color:#00F>=</tt><tt style=color:#30F>~</tt><tt style=color:#60F>~</tt><tt style=color:#90F>~</tt><tt style=color:#C0F>~</tt><tt style=color:#F0F>~</tt> <tt style=color:#F0C>~</tt> <tt style=color:#F09>-</tt> <tt style=color:#F06>-</tt>  <tt style=color:#F03>-</tt>
+-  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
 $(/usr/games/fortune characters | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
 </font></pre></div></center></body></html>
 --who-cares/nomatter--

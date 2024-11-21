@@ -3734,22 +3734,6 @@ Compute' -- I forget which."
 
 SPECIES:	Cranial Males
 SUBSPECIES:	The Hacker (homo computatis)
-Courtship & Mating:
-	Due to extreme deprivation, HOMO COMPUTATIS maintains a near perpetual
-	state of sexual readiness.  Courtship behavior alternates between
-	awkward shyness and abrupt advances.  When he finally mates, he
-	chooses a female engineer with an unblinking stare, a tight mouth, and
-	a complete collection of Campbell's soup-can recipes.
-Track:
-	Trash cans full of pale green and white perforated paper and old
-	copies of the Allen-Bradley catalog.
-Comments:
-	Extremely fond of bad puns and jokes that need long explanations.
-%
-	The FIELD GUIDE to NORTH AMERICAN MALES
-
-SPECIES:	Cranial Males
-SUBSPECIES:	The Hacker (homo computatis)
 Description:
 	Gangly and frail, the hacker has a high forehead and thinning hair.
 	Head disproportionately large and crooked forward, complexion wan and
@@ -5440,11 +5424,6 @@ risk is in the news, then it's probably not worth worrying about.  When
 something is no longer reported -- automobile deaths, domestic violence -- when
 it's so common that it's not news, then you should start worrying."
 		-- Bruce Schneier, in _CRYPTO-GRAM_, May 15, 2005.
-%
-In case it's not obvious, any solution to this problem that introduces a
-dependency on Java is profoundly uninteresting to me. In fact, my
-indifference to that could only be described as "sexual" in intensity.
-		-- Jamie Zawinski
 %
 "We wanted to build the chat system of the future, and we
 ended up with application-layer multicast streaming media. In 1999.

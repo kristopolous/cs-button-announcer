@@ -736,8 +736,6 @@ Failure to adjust for daylight savings time.
 %
 Virus transmitted from computer to sysadmins.
 %
-Virus due to computers having unsafe sex.
-%
 Incorrectly configured static routes on the corerouters.
 %
 Forced to support NT servers; sysadmins quit.

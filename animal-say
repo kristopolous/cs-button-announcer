@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /home/chris/cs-check
+line=$(printf ".:*~*:._%.0s" $(seq 1 7) | sed 's/.$//')
 cat << ENDL
 MIME-Version: 1.0
 Content-Type: multipart/alternative; 
@@ -14,9 +15,9 @@ Content-Type: text/html
 <html><body>
 $(./check-for-events.py)
 <center><div style=display:inline-block;text-align:left>
-<pre style=line-height:1.15em><font color=#555>-  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -<em style=color:#888>
-$(/usr/games/fortune /home/chris/cs-check/fortunes | sed -E 's/^\s+//g' | fold -sbw 40 | sed -E 's/^/   /')</em>
--  - - ~ ~~~~==~#=###=#~==~~~~~ ~ - -  -
+<pre style=line-height:1.15em><font color=#555>$line<em style=color:#888>
+$(/usr/games/fortune /home/chris/cs-check/fortunes | sed -E 's/^\s+//g' | fold -sbw 50 | sed -E 's/^/  /')</em>
+$line
 $(/usr/games/fortune characters | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
 </font></pre></div></center></body></html>
 --who-cares/nomatter--

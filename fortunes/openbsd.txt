@@ -2410,12 +2410,6 @@ Cahn's Axiom:
 California is a fine place to live -- if you happen to be an orange.
 		-- Fred Allen
 %
-California, n.:
-	From Latin "calor", meaning "heat" (as in English "calorie" or
-Spanish "caliente"); and "fornia'" for "sexual intercourse" or
-"fornication." Hence: Tierra de California, "the land of hot sex."
-		-- Ed Moran
-%
 Call on God, but row away from the rocks.
 		-- Indian proverb
 %
@@ -3250,10 +3244,6 @@ the time to take the dirt out of them?
 "Of course it's wrong!  It's illegal!"
 "I've never done anything illegal before."
 "I thought you said you were an accountant!"
-%
-Documentation is like sex: when it is good, it is very, very good; and
-when it is bad, it is better than nothing.
-		-- Dick Brandon
 %
 Documentation is the castor oil of programming.  Managers know it must
 be good because the programmers hate it so much.
@@ -4499,12 +4489,6 @@ extracurricular activity except you."
 			-- Firesign Theater
 %
 "Gee, Toto, I don't think we are in Kansas anymore."
-%
-GEMINI (May 21 - June 20)
-	You are a quick and intelligent thinker.  People like you because
-	you are bisexual.  However, you are inclined to expect too much
-	for too little.  This means you are cheap.  Geminis are known for
-	committing incest.
 %
 GEMINI (May 21 to Jun.  20)
 	Good news and bad news highlighted.  Enjoy the good news while you

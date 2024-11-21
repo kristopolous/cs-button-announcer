@@ -1,6 +1,7 @@
 #!/bin/bash
 cd /home/chris/cs-check
-line=$(printf ".:*~*:._%.0s" $(seq 1 7) | sed 's/.$//')
+line=$(printf    "⢀⡠⣀⣠⣤⣦⣴⣤⣠⣀⡠⢀%.0s" $(seq 1 4))
+bottom=$(printf  "⣤⣠⣀⡠⢀⢀⡠⣀⣠⣤⣦⣴%.0s" $(seq 1 4))
 cat << ENDL
 MIME-Version: 1.0
 Content-Type: multipart/alternative; 
@@ -15,11 +16,11 @@ Content-Type: text/html
 <html><body>
 $(./check-for-events.py)
 <center><div style=display:inline-block;text-align:left>
-<pre style=line-height:1.15em><font color=#555>$line<em style=color:#888>
+<pre style=line-height:1.15em;white-space:pre>$line<em>
 $(/usr/games/fortune /home/chris/cs-check/fortunes | ./repage.py 50 | sed -E 's/^/  /')</em>
-$line
+$bottom
 $(/usr/games/fortune characters | gawk ' { if (FNR == 1) { printf "     \\  ";} else if (FNR == 2) { printf "      \\ "; } else { printf "        " }; print $0 } ';)
-</font></pre></div></center></body></html>
+</pre></div></center></body></html>
 --who-cares/nomatter--
 
 ENDL

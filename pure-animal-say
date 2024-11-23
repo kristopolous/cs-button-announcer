@@ -1,11 +1,11 @@
 #!/bin/bash
-size=40
-line="╭"$(printf    "%.0s-" $(seq 1 $((size + 2))))"╮"
-bottom="╰---.  "$(printf    "%.0s-" $(seq 1 $((size - 4))))"╯"
+size=$(( RANDOM % 15 + 30 ))
+line="╭"$(printf    "%.0s-" $(seq 1 $((size + 4))))"╮"
+bottom="╰---.  "$(printf    "%.0s-" $(seq 1 $((size - 2))))"╯"
 cat << ENDL
 $line
 $( (echo "";fortune fortunes;echo "") | ./repage.py $size no )
 $bottom
-     \ |
-$(fortune characters | gawk ' { if (FNR == 1) { printf "      \\|"; } else { printf "        " }; print $0 } ';)
+     \ :
+$(fortune characters | gawk ' { if (FNR == 1) { print "  "  substr($0, 0, 4 )   "\\:"  substr($0, 7); } else { print "  "$0  } } ';)
 ENDL

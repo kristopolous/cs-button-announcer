@@ -1,8 +1,8 @@
 #!/bin/bash
 cd /home/chris/cs-check
-size=40
-line="╭"$(printf    "%.0s-" $(seq 1 $((size + 2))))"╮"
-bottom="╰---.  "$(printf    "%.0s-" $(seq 1 $((size - 4))))"╯"
+size=$(( RANDOM % 15 + 30 ))
+line="╭"$(printf    "%.0s-" $(seq 1 $((size + 4))))"╮"
+bottom="╰---.  "$(printf    "%.0s-" $(seq 1 $((size - 2))))"╯"
 cat << ENDL
 MIME-Version: 1.0
 Content-Type: multipart/alternative; 
@@ -20,8 +20,8 @@ $(./check-for-events.py)
 <pre style=font-family:monospace;line-height:1em;white-space:pre>$line
 $( (echo "";/usr/games/fortune /home/chris/cs-check/fortunes;echo "") | ./repage.py $size )
 $bottom
-     \ |
-$(/usr/games/fortune characters | gawk ' { if (FNR == 1) { printf "      \\|"; } else { printf "        " }; print $0 } ';)
+     \ :
+$(/usr/games/fortune characters | gawk ' { if (FNR == 1) { print "  "  substr($0, 0, 4 )   "\\:"  substr($0, 7); } else { print "  "$0  } } ';)
 </pre></div></center></body></html>
 --who-cares/nomatter--
 

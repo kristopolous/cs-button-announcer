@@ -1,0 +1,12 @@
+#!/bin/bash
+cd /home/chris/cs-check
+size=40
+line="╭"$(printf    "%.0s-" $(seq 1 $((size + 2))))"╮"
+bottom="╰---.  "$(printf    "%.0s-" $(seq 1 $((size - 4))))"╯"
+cat << ENDL
+$line
+$( (echo "";/usr/games/fortune /home/chris/cs-check/fortunes;echo "") | ./repage.py $size no )
+$bottom
+     \ |
+$(/usr/games/fortune characters | gawk ' { if (FNR == 1) { printf "      \\|"; } else { printf "        " }; print $0 } ';)
+ENDL

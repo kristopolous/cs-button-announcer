@@ -4,26 +4,27 @@ import textwrap
 import re
 import html
 
+process = lambda text: html.escape('\n'.join(map(lambda x: '│ ' + x + ' ' * (wrap_width - len(x)) + ' │', text.split('\n'))))
+
 def process_stream(wrap_width):
     paragraph = []
     
     for line in sys.stdin:
         line = re.sub('\t','  ', line.rstrip())
         
-        if '  --' in line or not line:  # Blank or non-word-starting line
+        if '  --' in line or not line: 
             if paragraph:  # Process the previous paragraph
-                print(html.escape(textwrap.fill(' '.join(paragraph), width=wrap_width)))
+                text = textwrap.fill(' '.join(paragraph), width=wrap_width)
+                print(process(text))
                 paragraph = []
-            print(html.escape(line))
+            line = textwrap.fill(line, width=wrap_width)
+            print(process(line))
         else:
-            paragraph.append(line)  # Collect lines for wrapping
+            paragraph.append(line.lstrip())  
 
-    # Process any remaining paragraph
     if paragraph:
-        print(textwrap.fill(' '.join(paragraph), width=wrap_width))
+        print(process(textwrap.fill(' '.join(paragraph), width=wrap_width)))
 
-# Example usage
-if __name__ == "__main__":
-    wrap_width = int(sys.argv[1] if len(sys.argv) > 1 else 100)
-    process_stream(wrap_width)
+wrap_width = int(sys.argv[1] if len(sys.argv) > 1 else 80)
+process_stream(wrap_width)
 

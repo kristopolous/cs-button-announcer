@@ -1,13 +1,13 @@
 #!/bin/bash
 cd /home/chris/cs-check
 size=$(( RANDOM % 15 + 30 ))
-fortune=$(fortune fortunes)
+fortune=$(/usr/games/fortune fortunes)
 if [[ ${#fortune} -lt $(( size + 5 )) ]]; then
   size=${#fortune}
 fi
 
-line="╭"$(printf    "%.0s-" $(seq 1 $((size + 4))))"╮"
-bottom="╰---.  ⢠"$(printf    "%.0s-" $(seq 1 $((size - 3))))"╯"
+line="."$(printf    "%.0s⠂" $(seq 1 $((size + 4))))"."
+bottom="⠈---.  ⢠"$(printf    "%.0s-" $(seq 1 $((size - 4))))"⠂ "
 cat << ENDL
 MIME-Version: 1.0
 Content-Type: multipart/alternative; 

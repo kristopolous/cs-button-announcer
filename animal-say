@@ -26,7 +26,7 @@ $(./check-for-events.py)
 $( builtin echo -e "\n$fortune\n" | ./repage.py $size )
 $bottom
      ⠡ :
-$(/usr/games/fortune characters | gawk ' { if (FNR == 1) { print "  "  substr($0, 0, 4 )   "⠡:"  substr($0, 7); } else { print "  "$0  } } ';)
+$(/usr/games/fortune characters | gawk ' { if (FNR == 1) { print " "  substr($0, 0, 5)   "⠡:"  substr($0, 8); } else { print " "$0  } } ';)
 </pre></div></center></body></html>
 --who-cares/nomatter--
 

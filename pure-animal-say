@@ -1,12 +1,12 @@
 #!/bin/bash
 size=$(( RANDOM % 15 + 30 ))
-fortune=$(fortune fortunes)
+fortune=$(/usr/games/fortune $PWD/fortunes)
 if [[ ${#fortune} -lt $(( size + 5 )) ]]; then
   size=${#fortune}
 fi
 
-line="."$(printf    "%.0s⠂" $(seq 1 $((size + 4))))"."
-bottom="⠈---.  ⢠"$(printf    "%.0s-" $(seq 1 $((size - 4))))"⠂ "
+line="."$(printf    "%.0s-" $(seq 1 $((size + 4))))"."
+bottom=" ⠂--.  ⢠"$(printf    "%.0s-" $(seq 1 $((size - 4))))"⠂ "
 cat << ENDL
 $line
 $( builtin echo -e "\n$fortune\n" | ./repage.py $size no )

@@ -4,7 +4,7 @@ import textwrap
 import re
 import html
 
-_process = lambda text: '\n'.join(map(lambda x: '│  ' + x + ' ' * (wrap_width - len(x)) + '  │', text.split('\n')))
+_process = lambda text: '\n'.join(map(lambda x: ':  ' + x + ' ' * (wrap_width - len(x)) + '  :', text.split('\n')))
 if len(sys.argv) <= 2:
     process = lambda text: html.escape(_process(text))
 else:

@@ -6,7 +6,11 @@ import subprocess
 
 status_file = ".last-crash-space-status.txt"
 
-response = requests.get( "https://crashspacela.com/sign/")
+try:
+    response = requests.get( "https://crashspacela.com/sign/")
+except requests.exceptions.ConnectionError as ex:
+    pass
+
 if response.status_code == 200:
     page_text = response.text.lower()
     last_status = current_status = "unknown"

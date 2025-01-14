@@ -13,7 +13,7 @@ now = datetime.now(pytz.timezone('America/Los_Angeles'))
 events_result = service.events().list(
     calendarId='crashspacela@gmail.com',
     timeMin=(now - timedelta(minutes=20)).isoformat(),
-    timeMax=(now + timedelta(minutes=50)).isoformat(),
+    timeMax=(now + timedelta(minutes=100)).isoformat(),
     singleEvents=True
 ).execute()
 

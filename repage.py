@@ -13,7 +13,15 @@ else:
 def process_stream(wrap_width):
     paragraph = []
     
-    for line in sys.stdin:
+    raw_data = sys.stdin.buffer.read()
+
+    try:
+        data = raw_data.decode('utf-8')
+    except UnicodeDecodeError:
+        data = raw_data.decode('latin1', errors='replace')
+
+    data = "\n" + data.strip() + "\n"
+    for line in data.split("\n"):
         line = re.sub('\t','  ', line.rstrip())
         
         if '  --' in line or not line: 

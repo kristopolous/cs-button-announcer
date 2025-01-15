@@ -6,6 +6,7 @@ import subprocess
 
 status_file = ".last-crash-space-status.txt"
 
+response = None
 try:
     response = requests.get( "https://crashspacela.com/sign/")
 except requests.exceptions.ConnectionError as ex:

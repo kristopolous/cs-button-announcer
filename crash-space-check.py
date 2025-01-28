@@ -10,7 +10,7 @@ response = None
 try:
     response = requests.get( "https://crashspacela.com/sign/")
 except requests.exceptions.ConnectionError as ex:
-    pass
+    sys.exit(0)
 
 if response.status_code == 200:
     page_text = response.text.lower()

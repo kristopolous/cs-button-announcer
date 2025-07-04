@@ -21,9 +21,16 @@ events_result = service.events().list(
 events = events_result.get('items', [])
 if events:
     try:
-        print(f'<h1>{events[0]["summary"]}</h1>\n<p>{events[0]["description"]}</p>')
+        what = events[0]
+
+        if what.get('description'):
+            print(f'<h1>{what["summary"]}</h1>\n<p>{what["description"]}</p>')
+        else:
+            print(f'<h1>{what["summary"]}</h1>')
+
     except Exception as ex:
         pprint(events)
+        print(ex)
 else:
     title = random.choice([
         "Secret Time",

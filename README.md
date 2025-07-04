@@ -17,3 +17,5 @@ The cron line I use is
 I use [msmtp](https://marlam.de/msmtp/) for the mail program. 
 
 The cutesy quotes in the body of the message are done with the magic of the old unix [fortune](https://en.wikipedia.org/wiki/Fortune_(Unix)) program. The one I used was the apt-available debian one.
+
+The databases are continually being purged of quotes that have aged poorly as they are identified.
